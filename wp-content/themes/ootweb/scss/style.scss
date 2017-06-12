@@ -1,5 +1,6 @@
 $primary-font: 'Poppins', sans-serif;
-
+$light: 300;
+$medium: 500;
 $primary-color: #4f498c;
 
 @mixin vertical-center($percent) {
@@ -71,11 +72,76 @@ header {
     color: #fff;
 }
 
+.key-features {
+    padding: 155px 0;
+	
+	.feature {
+		text-align: center;
+		
+		img {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 21px;
+		}
+		h4 {
+			font-weight: $light;
+			font-size: 20px;
+			color: #666688;
+		}
+		p {
+			font-weight: $light;
+			font-size: 14px;
+			color: #9696a8;
+		    padding: 0 40px;
+		}
+	}
+}
+
+.live-oots {
+	background: url(../images/live-oots-static.jpg);
+    position: relative;
+	background-size: cover;
+	
+	img {
+	    margin: 0 auto;
+		display: block;
+	}
+}
+
+.user-journey {
+    padding: 120px 0 100px 0;
+	
+	h3 {
+		text-align: center;
+		font-family: $primary-font !important;
+		font-weight: $light;
+	    font-size: 48px;
+		color: #666688;
+		margin-bottom: 46px;
+	}
+}
+
+.owl-carousel .owl-item img {
+    width: inherit !important;
+    margin: 0 auto;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #cecece !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: $primary-color !important;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+	margin-top: 55px !important;
+}
+
 footer {
 	background-color: #36324f;
 	text-align: center;
 	padding: 10px 0;
-	
 	
 	p {
 	    font-size: 18px;
