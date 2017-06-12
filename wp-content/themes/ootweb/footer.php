@@ -1,11 +1,10 @@
-<div class="clear"></div>
-</div>
-<footer id="footer" role="contentinfo">
-<div id="copyright">
-<?php echo sprintf( __( '%1$s %2$s %3$s. All Rights Reserved.', 'ootweb' ), '&copy;', date( 'Y' ), esc_html( get_bloginfo( 'name' ) ) ); ?>
-</div>
-</footer>
-</div>
-<?php wp_footer(); ?>
-</body>
+				<div class="clear"></div>
+			</div>
+			<footer id="footer" role="contentinfo">
+				<p><span>Contact:</span> Jonathan Mathews</p>
+				<p>07912 516 787 / <?php echo antispambot( 'jonathan.mathews@protirus.com' ); ?></p>
+			</footer>
+		</div>
+		<?php wp_footer(); ?>
+	</body>
 </html>
