@@ -18,6 +18,7 @@ function ootweb_load_scripts() {
 	wp_enqueue_script('foundation', get_template_directory_uri() . '/js/vendor/foundation.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('appjs', get_template_directory_uri() . '/js/app.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('owljs', get_template_directory_uri() . '/owlcarousel/owl.carousel.js', array('jquery'), '1.0.0', false);
+	wp_enqueue_script('scrolltrigger', get_template_directory_uri() . '/js/ScrollTrigger.min.js', array('jquery'), '1.0.0', true);
 	
 	wp_enqueue_script('ootjs', get_template_directory_uri() . '/js/oot.js', array('jquery'), '1.0.0', true);
 	
@@ -66,3 +67,35 @@ function _theme_setup()
     //Theme Support
     add_theme_support( 'menus' );
 }
+
+function oot_login_logo() { ?>
+	<style type="text/css">
+		body.login div#login h1 a {
+			background-image: url(<?php echo get_template_directory_uri(); ?>/images/admin-logo.png);
+			height: 100px;
+			width: 100%;
+			background-size: 100%;
+		}
+	</style>
+<?php }
+add_action( 'login_enqueue_scripts', 'oot_login_logo' );
+
+function custom_login_css() { 
+	echo '<link rel="stylesheet" type="text/css" media="all" href="' . get_template_directory_uri() . '/css/custom-login.css" />'; 
+} 
+add_action('login_head', 'custom_login_css');
+
+function oot_login_logo_url() {
+	return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'oot_login_logo_url' );
+
+function oot_login_logo_url_title() {
+return 'Oot';
+}
+add_filter( 'login_headertitle', 'oot_login_logo_url_title' );
+
+function oot_login_head() {
+remove_action('login_head', 'wp_shake_js', 12);
+}
+add_action('login_head', 'oot_login_head');

@@ -1,0 +1,328 @@
+@import url(forms.css);
+@import url(l10n.css);
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #f1f1f1;
+}
+
+body {
+    background: url(../images/banner-full-width.jpg);
+	background-size: cover;
+	min-width: 0;
+	color: #444;
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	line-height: 1.4em;
+}
+
+a {
+	color: #b0aec3;
+	-webkit-transition-property: border, background, color;
+	transition-property: border, background, color;
+	-webkit-transition-duration: .05s;
+	transition-duration: .05s;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+
+a {
+	outline: 0;
+}
+
+a:hover,
+a:active {
+	color: #124964;
+}
+
+a:focus {
+	color: #124964;
+}
+
+.login #nav a:hover, .login #backtoblog a:hover, .login h1 a:hover {
+	color: #633796 !important;
+}
+
+a:focus,
+a:active {
+	outline: thin dotted;
+}
+
+p {
+	line-height: 1.5;
+}
+
+.login .message {
+	border-left: none;
+	color: #ffffff;
+	padding: 1px 12px;
+	background: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-align: center;
+}
+
+.login #login_error {
+	border-left: 4px solid #dd3d36;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+}
+
+#loginform p.submit,
+.login-action-lostpassword p.submit {
+	border: none;
+	margin: -10px 0 20px; /* May want to revisit this */
+}
+
+input[type=checkbox]:focus {
+	border-color: #b4b9be;
+	box-shadow: none;
+}
+
+.login * {
+	margin: 0;
+	padding: 0;
+}
+
+.login form {
+	margin-top: 20px;
+	margin-left: 0;
+	padding: 26px 0 46px;
+	font-weight: normal;
+	overflow: hidden;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.login form .forgetmenot {
+	font-weight: normal;
+	float: left;
+	margin-bottom: 0;
+}
+
+.login .button-primary {
+	float: right;
+}
+
+#login form p {
+	margin-bottom: 0;
+}
+
+#login form p.submit {
+	margin: 0;
+	padding: 0;
+}
+
+.login label {
+	color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.login form .forgetmenot label {
+	font-size: 12px;
+	line-height: 19px;
+}
+
+.login h1 {
+	text-align: center;
+}
+
+.login h1 a {
+	background-image: url(../images/w-logo-blue.png?ver=20131202);
+	background-image: none, url(../images/wordpress-logo.svg?ver=20131107);
+	-webkit-background-size: 80px 80px;
+	background-size: 80px 80px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	color: #999;
+	height: 80px;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1.3em;
+	margin: 0 auto 25px;
+	padding: 0;
+	text-decoration: none;
+	width: 80px;
+	text-indent: -9999px;
+	outline: none;
+	overflow: hidden;
+	display: block;
+}
+
+#login {
+	width: 320px;
+	padding: 8% 0 0;
+	margin: auto;
+}
+
+#login_error,
+.login .message {
+	margin-left: 0;
+	padding: 12px;
+}
+
+.login #nav,
+.login #backtoblog {
+	font-size: 13px;
+	padding: 0 24px 0;
+}
+
+.login #nav {
+    width: 50%;
+    padding: 0px !important;
+    margin: 0px;
+    display: inline-block;
+	float: right;
+	text-align: right;
+	margin-top: 5px;
+}
+
+#backtoblog {
+    width: 50%;
+    padding: 0px !important;
+    margin: 0px;
+    display: inline-block;
+    float: left;
+	margin-top: 5px;
+}
+
+.login #nav a,
+.login #backtoblog a {
+	text-decoration: none;
+	color: #ffffff;
+
+}
+
+.login #nav a:hover,
+.login #backtoblog a:hover,
+.login h1 a:hover {
+	color: rgba(35, 31, 32, 1);
+}
+
+.login form .input,
+.login input[type="text"] {
+    font-size: 24px;
+    line-height: 1;
+    width: 100%;
+    padding: 3px;
+    margin: 2px 6px 16px 0;
+    border-radius: 100px;
+    border: 1px solid #6b6378;
+    color: #373250;
+    background: #ffffff !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 20px;
+    padding: 7px;
+    text-indent: 10px;
+    font-weight: 100;
+}
+
+.login form .input,
+.login input[type="text"],
+.login form input[type="checkbox"] {
+	background: rgba(255, 255, 255, 0.04);
+}
+
+.ie7 .login form .input,
+.ie8 .login form .input {
+	font-family: sans-serif;
+}
+
+.login #pass-strength-result {
+	width: 250px;
+	font-weight: 600;
+	margin: 12px 0 6px;
+	padding: 6px 5px;
+	text-align: center;
+}
+
+.mobile #login {
+	padding: 20px 0;
+}
+
+.mobile #login form,
+.mobile #login .message,
+.mobile #login_error {
+	margin-left: 0;
+}
+
+.mobile #login #nav,
+.mobile #login #backtoblog {
+	margin-left: 8px;
+}
+
+.mobile #login h1 a {
+	width: auto;
+}
+
+body.interim-login {
+	height: auto;
+}
+
+.interim-login #login {
+	padding: 0;
+	margin: 5px auto 20px;
+}
+
+.interim-login.login h1 a {
+	width: auto;
+}
+
+.interim-login #login_error,
+.interim-login.login .message {
+	margin: 0 0 16px;
+}
+
+.interim-login.login form {
+	margin: 0;
+}
+
+.wp-core-ui .button-primary {
+    background: #4f4a8d;
+    border: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 0px;	
+}
+
+.wp-core-ui .button-primary:hover {
+    background: #4f4a8d;
+    border-color: #4f4a8d;	
+}
+
+input[type=checkbox]:checked:before {
+    content: "\f147";
+    margin: -3px 0 0 -4px;
+    color: #ffffff;
+}
+
+input:-webkit-autofill:active, textarea:-webkit-autofill, select:-webkit-autofill, input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+    -webkit-text-fill-color: #b0aec3 !important;
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+
+@media screen and ( max-width: 782px ) {
+	.interim-login input[type=checkbox] {
+		height: 16px;
+		width: 16px;
+	}
+
+	.interim-login input[type=checkbox]:checked:before {
+		width: 16px;
+		font: normal 21px/1 'dashicons';
+		margin: -3px 0 0 -4px;
+	}
+}
