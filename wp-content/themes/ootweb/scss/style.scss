@@ -374,6 +374,14 @@ footer {
 			font-weight: 500;
 		}
 	}
+	
+	a {
+		color: #fff;
+		
+		&:hover {
+		color: #b7bdd5;
+		}
+	}
 }
 
 @media (max-width: 1920px) {
