@@ -2,7 +2,7 @@
 			</div>
 			<footer id="footer" role="contentinfo">
 				<p><span>Contact:</span> Jonathan Mathews</p>
-				<p>07912 516 787 / <?php echo antispambot( 'jonathan.mathews@protirus.com' ); ?></p>
+				<p><a href="tel:07912516787">07912 516 787</a> / <a href="mainto:<?php echo antispambot( 'jonathan.mathews@protirus.com' ); ?>"><?php echo antispambot( 'jonathan.mathews@protirus.com' ); ?></a></p>
 			</footer>
 		</div>
 		<?php wp_footer(); ?>

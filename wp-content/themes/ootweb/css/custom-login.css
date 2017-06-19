@@ -119,6 +119,20 @@ input[type=checkbox]:focus {
 #login form p.submit {
 	margin: 0;
 	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+#login form p.submit input,
+#login form p.submit input:hover,
+#login form p.submit input:focus,
+#login form p.submit input:active {
+    background: #4f4a8d;
+    border: 0px;
+	outline: 0;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 0px;	
 }
 
 .login label {

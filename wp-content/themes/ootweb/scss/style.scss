@@ -25,6 +25,7 @@ $primary-color: #4f498c;
 header {
 	background: url(../images/banner-full-width.jpg);
     position: relative;
+	background-size: cover;
 	
 	.banner-overlay {
 		max-width: 880px;
@@ -51,7 +52,7 @@ header {
 		width: 100%;
 		position: absolute;
 		bottom: 0;
-		display: grid;
+		display: block;
 		
 		img {
 			float: left;
@@ -62,6 +63,7 @@ header {
 .nav-wrapper {
     max-width: 73.75rem !important;
 	margin-bottom: 20px;
+    padding-top: 3em;
 }
 
 .top-bar, .top-bar ul {
@@ -389,6 +391,9 @@ footer {
 @media (max-width: 1300px) {
 	.why-oot .inner p {
 		padding-right: 40px;
+	}
+	.nav-wrapper {
+		padding-top: 0em;
 	}
 }
 
